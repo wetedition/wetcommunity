@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WET Community</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    header {
+      padding: 60px 20px 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    header img {
+      width: 250px;
+      animation: floatLogo 4s ease-in-out infinite;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-top: 20px;
+      color: #ffb347;
+      animation: slideIn 1.5s ease-out;
+    }
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      line-height: 1.6;
+      font-size: 1.1em;
+      animation: fadeUp 2s ease-in-out;
+    }
+    .memories {
+      background: #111;
+      padding: 40px 20px;
+      margin-top: 50px;
+      border-top: 2px solid #ffb347;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .memories h2 {
+      color: #ffb347;
+      margin-bottom: 20px;
+    }
+    .memory-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .memory-card {
+      background: #222;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 250px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .memory-card video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .memory-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #ffb347;
+    }
+    .contact {
+      margin-top: 50px;
+      font-size: 1.1em;
+    }
+    .contact a {
+      color: #ffb347;
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    .contact a:hover {
+      color: #fff;
+      transform: scale(1.1);
+    }
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #aaa;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    /* Responsive layout */
+    @media (max-width: 768px) {
+      .memory-card {
+        width: 100%;
+      }
+      header img {
+        width: 180px;
+      }
+      h1 {
+        font-size: 2em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .memory-card {
+        width: 100%;
+      }
+      header img {
+        width: 150px;
+      }
+      h1 {
+        font-size: 1.6em;
+      }
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideIn {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes floatLogo {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="wet-logo.png" alt="WET Logo">
+    <h1>WET — Where Connections Flow</h1>
+  </header>
+
+  <section>
+    <p>
+      WET is a growing community designed to bring people together through meaningful connections,
+      networking, shared experiences, and new opportunities. It's a space to discover your tribe,
+      build relationships, and be part of something truly special.
+    </p>
+  </section>
+
+  <!-- Unified Memories Section -->
+  <div class="memories">
+    <h2>🌟 Memories</h2>
+    <div class="memory-gallery">
+      <div class="memory-card"><video controls><source src="event1.mp4" type="video/mp4"></video></div>
+      <div class="memory-card"><video controls><source src="event2.mp4" type="video/mp4"></video></div>
+      <div class="memory-card"><video controls><source src="event3.mp4" type="video/mp4"></video></div>
+      <div class="memory-card"><video controls><source src="event4.mp4" type="video/mp4"></video></div>
+      <div class="memory-card"><video controls><source src="event5.mp4" type="video/mp4"></video></div>
+      <div class="memory-card"><video controls><source src="event6.mp4" type="video/mp4"></video></div>
+      <div class="memory-card"><video controls><source src="event7.mp4" type="video/mp4"></video></div>
+      <div class="memory-card"><video controls><source src="event8.mp4" type="video/mp4"></video></div>
+      <div class="memory-card"><video controls><source src="event9.mp4" type="video/mp4"></video></div>
+      <div class="memory-card"><video controls><source src="event10.mp4" type="video/mp4"></video></div>
+      <div class="memory-card"><video controls><source src="event11.mp4" type="video/mp4"></video></div>
+      <div class="memory-card"><video controls><source src="event12.mp4" type="video/mp4"></video></div>
+      <div class="memory-card"><video controls><source src="event13.mp4" type="video/mp4"></video></div>
+      <div class="memory-card"><video controls><source src="event14.mp4" type="video/mp4"></video></div>
+      <div class="memory-card"><video controls><source src="event15.mp4" type="video/mp4"></video></div>
+    </div>
+  </div>
+
+  <div class="contact">
+    <p>📞 <a href="tel:+2348125529243">+234 812 552 9243</a></p>
+    <p>👻 Snapchat: <strong>@weteditions</strong></p>
+    <p>📸 Instagram: <strong>@editions.wet</strong></p>
+  </div>
+
+  <footer>
+    © 2026 WET Community. All rights reserved.
+  </footer>
+</body>
+</html>
